@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { X, ZoomIn } from 'lucide-react';
-import gallery1 from '@/assets/galery-1.png';
+import galery1 from '@/assets/galery-1.png';
+import gallery1 from '@/assets/gallery-1.jpg';
 import gallery2 from '@/assets/gallery-2.jpg';
+import galery2 from '@/assets/galery-2.png';
 import workshopImage from '@/assets/workshop.jpg';
+import galery3 from '@/assets/galery-3.png';
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -30,19 +33,19 @@ const GallerySection = () => {
     },
     {
       id: 4,
-      image: gallery1,
+      image: galery1,
       title: "Angel Eyes RGB",
       description: "Pemasangan angel eyes dengan teknologi RGB yang dapat disesuaikan warnanya sesuai keinginan."
     },
     {
       id: 5,
-      image: gallery2,
+      image: galery2,
       title: "Mini Projector Installation",
       description: "Instalasi mini projector untuk pencahayaan fokus dengan kualitas cahaya yang sangat terang dan jernih."
     },
     {
       id: 6,
-      image: workshopImage,
+      image: galery3,
       title: "Variasi Lampu Alis",
       description: "Pemasangan lampu alis dengan berbagai pilihan warna dan desain untuk mempercantik tampilan motor."
     }
