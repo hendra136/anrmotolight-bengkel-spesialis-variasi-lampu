@@ -6,7 +6,7 @@ const WhyChooseUsSection = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: "Tenaga Ahli Berpengalaman",
-      description: "Tim teknisi profesional dengan pengalaman lebih dari 10 tahun di bidang kelistrikan dan variasi motor."
+      description: "Tim teknisi profesional dengan pengalaman lebih dari 5 tahun di bidang kelistrikan dan variasi motor."
     },
     {
       icon: <Settings className="w-8 h-8" />,
