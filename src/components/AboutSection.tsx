@@ -95,7 +95,7 @@ const AboutSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent rounded-2xl"></div>
               <div className="absolute bottom-6 left-6 right-6 text-white">
-                <h3 className="text-2xl font-bold mb-2">Workshop Modern</h3>
+                <h3 className="text-2xl font-bold mb-2">Workshop Lengkap</h3>
                 <p className="text-white/90">Fasilitas lengkap dengan peralatan terkini untuk hasil maksimal</p>
               </div>
             </div>
