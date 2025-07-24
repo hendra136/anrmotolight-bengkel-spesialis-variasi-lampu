@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Award, Users, Clock } from 'lucide-react';
-import workshopImage from '@/assets/workshop.jpg';
+import workshopImage from '@/assets/workshop.png';
 
 const AboutSection = () => {
   const achievements = [
