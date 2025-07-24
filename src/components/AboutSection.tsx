@@ -49,7 +49,7 @@ const AboutSection = () => {
               </p>
               
               <p className="leading-relaxed">
-                Dengan pengalaman lebih dari 10 tahun, kami telah melayani ribuan pelanggan dengan berbagai jenis 
+                Dengan pengalaman lebih dari 5 tahun, kami telah melayani ribuan pelanggan dengan berbagai jenis 
                 modifikasi lampu motor, mulai dari pemasangan HID, LED, projector, hingga sistem pencahayaan custom 
                 yang disesuaikan dengan kebutuhan dan selera masing-masing pelanggan.
               </p>
