@@ -6,8 +6,8 @@ import workshopImage from '@/assets/workshop.png';
 
 const AboutSection = () => {
   const achievements = [
-    "Lebih dari 10 tahun pengalaman di bidang variasi motor",
-    "Telah menangani 1000+ proyek variasi lampu motor",
+    "Lebih dari 5 tahun pengalaman di bidang variasi motor",
+    "Telah menangani 500+ proyek variasi lampu motor",
     "Tim teknisi bersertifikat dan berpengalaman",
     "Menggunakan spare part berkualitas tinggi",
     "Garansi untuk setiap pemasangan",
