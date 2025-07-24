@@ -134,7 +134,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-in-right': 'slide-in-right 0.6s ease-out',
-				'pulse-glow': 'pulse-glow 2s infinite'
+				'pulse-glow': 'pulse-glow 4s ease-in-out infinite'
 			}
 		}
 	},
