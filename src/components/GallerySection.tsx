@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { X, ZoomIn } from 'lucide-react';
-import gallery1 from '@/assets/gallery-1.jpg';
+import gallery1 from '@/assets/galery-1.png';
 import gallery2 from '@/assets/gallery-2.jpg';
 import workshopImage from '@/assets/workshop.jpg';
 
