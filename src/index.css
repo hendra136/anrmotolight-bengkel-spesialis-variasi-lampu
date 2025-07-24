@@ -142,8 +142,10 @@ All colors MUST be HSL.
   }
   
   .navbar-blur {
-    backdrop-filter: blur(12px);
-    background: hsl(var(--background) / 0.8);
+    backdrop-filter: blur(16px);
+    background: hsl(var(--background) / 0.85);
+    border-bottom: 1px solid hsl(var(--border) / 0.1);
+    box-shadow: 0 4px 32px hsl(var(--foreground) / 0.1);
   }
   
   .scroll-fade-in {
@@ -166,7 +168,7 @@ All colors MUST be HSL.
   }
   
   .cta-pulse {
-    animation: pulse-glow 2s infinite;
+    animation: pulse-glow 4s infinite;
   }
   
   @keyframes pulse-glow {

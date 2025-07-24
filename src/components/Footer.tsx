@@ -1,21 +1,22 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { MapPin, Phone, MessageCircle, Facebook, Instagram, Music } from 'lucide-react';
+import { MapPin, MessageCircle, Clock } from 'lucide-react';
+import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 const Footer = () => {
   const socialLinks = [
     {
-      icon: <Facebook className="w-5 h-5" />,
+      icon: <FaFacebook className="w-5 h-5" />,
       label: "Facebook",
       url: "https://facebook.com/anrmotolight" // placeholder
     },
     {
-      icon: <Instagram className="w-5 h-5" />,
+      icon: <FaInstagram className="w-5 h-5" />,
       label: "Instagram", 
-      url: "https://instagram.com/anrmotolight" // placeholder
+      url: "https://instagram.com/anangp045"
     },
     {
-      icon: <Music className="w-5 h-5" />,
+      icon: <FaTiktok className="w-5 h-5" />,
       label: "TikTok",
       url: "https://tiktok.com/@anrmotolight" // placeholder
     }
@@ -59,15 +60,13 @@ const Footer = () => {
               <h3 className="font-semibold mb-3">Ikuti Kami</h3>
               <div className="flex gap-3">
                 {socialLinks.map((social, index) => (
-                  <Button
+                  <button
                     key={index}
-                    variant="outline"
-                    size="icon"
-                    className="border-primary-foreground/20 text-primary-foreground hover:bg-accent hover:text-accent-foreground hover:border-accent"
                     onClick={() => window.open(social.url, '_blank')}
+                    className="w-10 h-10 rounded-full border border-primary-foreground/20 text-primary-foreground hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all duration-300 flex items-center justify-center"
                   >
                     {social.icon}
-                  </Button>
+                  </button>
                 ))}
               </div>
             </div>
@@ -118,19 +117,21 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                <a 
-                  href="tel:+6289541553209"
-                  className="text-primary-foreground/80 hover:text-accent transition-colors duration-300"
-                >
-                  0895-4155-32092
-                </a>
+              <div className="flex items-start gap-3">
+                <Clock className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-primary-foreground/80 text-sm">
+                    Jam Buka: 11.00 - 18.00 WIB
+                  </p>
+                  <p className="text-primary-foreground/60 text-xs">
+                    Senin - Minggu
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="space-y-3">
+            {/* CTA Button */}
+            <div>
               <Button 
                 variant="cta"
                 size="sm"
@@ -139,16 +140,6 @@ const Footer = () => {
               >
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Chat WhatsApp
-              </Button>
-              
-              <Button 
-                variant="outline"
-                size="sm"
-                onClick={() => window.open('tel:+6289541553209', '_blank')}
-                className="w-full justify-center border-primary-foreground/20 text-primary-foreground hover:bg-accent hover:text-accent-foreground hover:border-accent"
-              >
-                <Phone className="w-4 h-4 mr-2" />
-                Telepon
               </Button>
             </div>
           </div>
@@ -160,7 +151,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-primary-foreground/60 text-sm">
-              © 2024 ANRMOTOLIGHT. Semua hak cipta dilindungi.
+              © 2024 ANRMOTOLIGHT. Semua hak cipta dilindungi. | Website by Anang Prasetio
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-primary-foreground/60">

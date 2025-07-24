@@ -66,9 +66,9 @@ const WhyChooseUsSection = () => {
         <div className="mt-16 pt-16 border-t border-border">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { number: "10+", label: "Tahun Pengalaman" },
-              { number: "1000+", label: "Motor Dilayani" },
-              { number: "50+", label: "Jenis Layanan" },
+              { number: "5+", label: "Tahun Pengalaman" },
+              { number: "500+", label: "Motor Dilayani" },
+              { number: "10+", label: "Jenis Layanan" },
               { number: "100%", label: "Kepuasan Pelanggan" }
             ].map((stat, index) => (
               <div key={index} className="scroll-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>

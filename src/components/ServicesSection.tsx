@@ -20,7 +20,7 @@ const ServicesSection = () => {
       icon: <Zap className="w-8 h-8" />,
       title: "Kelistrikan Motor",
       description: "Service dan pemasangan sistem kelistrikan motor dengan standar profesional.",
-      price: "Mulai dari Rp 150K"
+      price: "Konsultasi Gratis"
     },
     {
       icon: <Palette className="w-8 h-8" />,
@@ -32,49 +32,61 @@ const ServicesSection = () => {
       icon: <Lightbulb className="w-8 h-8" />,
       title: "Pemasangan HID",
       description: "Pemasangan lampu HID berkualitas tinggi untuk pencahayaan optimal.",
-      price: "Mulai dari Rp 400K"
+      price: "Konsultasi Gratis"
     },
     {
       icon: <Target className="w-8 h-8" />,
       title: "Pemasangan D2 Pro",
       description: "Instalasi sistem pencahayaan D2 Pro dengan teknologi terdepan.",
-      price: "Mulai dari Rp 600K"
+      price: "Konsultasi Gratis"
     },
     {
       icon: <Wrench className="w-8 h-8" />,
       title: "Service & Perawatan",
       description: "Maintenance rutin dan perbaikan sistem pencahayaan motor Anda.",
-      price: "Mulai dari Rp 100K"
+      price: "Konsultasi Gratis"
     },
     {
       icon: <Flashlight className="w-8 h-8" />,
       title: "Lampu Motor",
       description: "Pemasangan dan penggantian berbagai jenis lampu motor modern.",
-      price: "Mulai dari Rp 200K"
+      price: "Konsultasi Gratis"
     },
     {
       icon: <Eye className="w-8 h-8" />,
       title: "Pemasangan Alis & Demon",
       description: "Instalasi lampu alis dan demon eyes untuk tampilan motor yang menawan.",
-      price: "Mulai dari Rp 300K"
+      price: "Konsultasi Gratis"
     },
     {
       icon: <Rainbow className="w-8 h-8" />,
       title: "Pemasangan Alis RGB",
       description: "Pemasangan lampu alis RGB dengan berbagai pilihan warna yang menarik.",
-      price: "Mulai dari Rp 500K"
+      price: "Konsultasi Gratis"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Pemasangan Mika",
       description: "Pemasangan mika lampu berkualitas untuk perlindungan dan estetika.",
-      price: "Mulai dari Rp 150K"
+      price: "Konsultasi Gratis"
     },
     {
       icon: <Circle className="w-8 h-8" />,
       title: "Pemasangan Mini Projie",
       description: "Instalasi mini projector untuk pencahayaan fokus dan berkualitas tinggi.",
-      price: "Mulai dari Rp 800K"
+      price: "Konsultasi Gratis"
+    },
+    {
+      icon: <Target className="w-8 h-8" />,
+      title: "Pemasangan LED Proyektor",
+      description: "Instalasi LED proyektor berkualitas tinggi untuk pencahayaan yang terang dan fokus.",
+      price: "Konsultasi Gratis"
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Upgrade Sistem Kelistrikan",
+      description: "Upgrade dan optimalisasi sistem kelistrikan motor untuk performa maksimal.",
+      price: "Konsultasi Gratis"
     }
   ];
 
@@ -118,7 +130,7 @@ const ServicesSection = () => {
                     variant="outline" 
                     size="sm" 
                     className="w-full group-hover:border-accent group-hover:text-accent"
-                    onClick={() => window.open('https://wa.me/62895415532092?text=Halo%20ANRMOTOLIGHT%2C%20saya%20ingin%20bertanya%20tentang%20' + service.title.toLowerCase(), '_blank')}
+                    onClick={() => window.open('https://wa.me/62895415532092?text=Halo%20ANRMOTOLIGHT%2C%20saya%20ingin%20konsultasi%20tentang%20layanan%20' + encodeURIComponent(service.title) + '.%20Mohon%20info%20lengkapnya.', '_blank')}
                   >
                     Konsultasi
                   </Button>

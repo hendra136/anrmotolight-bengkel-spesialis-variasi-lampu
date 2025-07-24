@@ -57,17 +57,8 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => window.open('tel:+6289541553209', '_blank')}
-              className="flex items-center gap-2"
-            >
-              <Phone className="w-4 h-4" />
-              Telepon
-            </Button>
+          {/* CTA Button */}
+          <div className="hidden md:flex items-center">
             <Button
               variant="cta"
               size="sm"
@@ -75,7 +66,7 @@ const Navigation = () => {
               className="flex items-center gap-2"
             >
               <MessageCircle className="w-4 h-4" />
-              Chat WA
+              Chat WhatsApp
             </Button>
           </div>
 
@@ -101,16 +92,7 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <div className="pt-4 pb-2 space-y-2">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => window.open('tel:+6289541553209', '_blank')}
-                  className="w-full flex items-center justify-center gap-2"
-                >
-                  <Phone className="w-4 h-4" />
-                  Telepon
-                </Button>
+              <div className="pt-4 pb-2">
                 <Button
                   variant="cta"
                   size="sm"
