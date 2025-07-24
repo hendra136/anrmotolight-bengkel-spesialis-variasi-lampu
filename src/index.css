@@ -8,50 +8,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* ANRMOTOLIGHT Design System - Modern Automotive Theme */
+    --background: 213 31% 97%;
+    --foreground: 213 19% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 213 19% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 213 19% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Deep Blue - Professional & Automotive */
+    --primary: 213 47% 23%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 213 47% 35%;
+    
+    /* Secondary: Slate Gray - Modern & Clean */
+    --secondary: 213 19% 50%;
+    --secondary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Muted: Light Gray */
+    --muted: 213 31% 91%;
+    --muted-foreground: 213 19% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent: Electric Orange - Light Theme */
+    --accent: 35 91% 65%;
+    --accent-foreground: 213 19% 18%;
+    --accent-glow: 35 91% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    /* Destructive */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders & Inputs */
+    --border: 213 31% 85%;
+    --input: 213 31% 85%;
+    --ring: 213 47% 23%;
 
-    --radius: 0.5rem;
+    /* Custom Design Tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(213 47% 23%) 0%, hsl(213 47% 35%) 50%, hsl(213 47% 23%) 100%);
+    --accent-gradient: linear-gradient(135deg, hsl(35 91% 65%) 0%, hsl(35 91% 55%) 100%);
+    --card-shadow: 0 4px 12px hsl(213 47% 23% / 0.1);
+    --card-shadow-hover: 0 8px 25px hsl(213 47% 23% / 0.15);
+    --glow-primary: 0 0 20px hsl(213 47% 35% / 0.3);
+    --glow-accent: 0 0 20px hsl(35 91% 65% / 0.4);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -101,5 +111,70 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom Component Styles */
+@layer components {
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+  
+  .accent-gradient {
+    background: var(--accent-gradient);
+  }
+  
+  .card-shadow {
+    box-shadow: var(--card-shadow);
+  }
+  
+  .card-shadow-hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+  
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .glow-accent {
+    box-shadow: var(--glow-accent);
+  }
+  
+  .navbar-blur {
+    backdrop-filter: blur(12px);
+    background: hsl(var(--background) / 0.8);
+  }
+  
+  .scroll-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .scroll-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+  
+  .cta-pulse {
+    animation: pulse-glow 2s infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 0 0 hsl(var(--accent) / 0.4);
+    }
+    50% { 
+      box-shadow: 0 0 0 20px hsl(var(--accent) / 0);
+    }
   }
 }
